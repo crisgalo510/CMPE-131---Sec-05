@@ -3,6 +3,7 @@ services:
   - type: web
     name: spartin-api
     runtime: docker
+    plan: free
     dockerfilePath: ./backend/Dockerfile
     dockerContext: ./backend
     healthCheckPath: /health
